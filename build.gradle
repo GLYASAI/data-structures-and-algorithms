@@ -1,0 +1,15 @@
+apply plugin: 'java'
+
+dependencies {
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.0'
+
+
+    testCompile('org.junit.jupiter:junit-jupiter-api:5.2.0')
+    testRuntime('org.junit.jupiter:junit-jupiter-engine:5.2.0')
+}
+
+repositories {
+    maven {url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+    mavenLocal()
+    mavenCentral()
+}
