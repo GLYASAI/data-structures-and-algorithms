@@ -25,7 +25,7 @@ public class CBTNodeQuantity {
             node = node.left;
         }
 
-        return level;
+        return level - 1;
     }
 
     public static void main(String[] args) {
@@ -35,7 +35,8 @@ public class CBTNodeQuantity {
         head.left.left = new Node(4);
         head.left.right = new Node(5);
         head.right.left = new Node(6);
-        head.right.right = new Node(7);
+        System.out.println(getMostLeftLevel(head, 1));
+//        head.right.right = new Node(7);
         System.out.println(countCBTNode(head, 1, getMostLeftLevel(head, 1)));
     }
 }
