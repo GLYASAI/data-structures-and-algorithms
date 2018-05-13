@@ -1,4 +1,4 @@
-package org.abewang.iq.btree;
+package org.abewang.iq.binarytree;
 
 /**
  * 判断一棵二叉树是否是平衡二叉树

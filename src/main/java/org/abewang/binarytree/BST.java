@@ -1,4 +1,4 @@
-package org.abewang.btree;
+package org.abewang.binarytree;
 
 import java.util.Stack;
 
@@ -8,10 +8,10 @@ import java.util.Stack;
  * @Author Abe
  * @Date 2018/3/16.
  */
-public class BTree<T> {
+public class BST<T> {
     private Node<T> root;
 
-    public BTree() {
+    public BST() {
         root = null;
     }
 

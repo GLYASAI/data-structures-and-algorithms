@@ -1,4 +1,4 @@
-package org.abewang.iq.btree;
+package org.abewang.iq.binarytree;
 
 /**
  * @Author Abe

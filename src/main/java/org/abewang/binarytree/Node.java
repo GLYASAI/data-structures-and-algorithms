@@ -1,4 +1,4 @@
-package org.abewang.btree;
+package org.abewang.binarytree;
 
 /**
  * 二叉树节点
