@@ -19,13 +19,18 @@ public class Successor {
     }
 
     public static Node getSuccessor(Node node) {
+        if (node == null) {
+            return node;
+        }
+
         if (node.right != null) {
             return getLeftMost(node.right);
         } else {
             Node parent = node.parent;
             // 不是根节点，且不是左子节点
-            if (parent != null && parent.left != node) {
-                parent = parent.parent;
+            while (parent != null && parent.left != node) {
+                node = parent;
+                parent = node.parent;
             }
             return parent;
         }
@@ -86,6 +91,6 @@ public class Successor {
         test = head.right;
         System.out.println(test.value + " next: " + getSuccessor(test).value);
         test = head.right.right; // 10's next is null
-        System.out.println(test.value + " next: " + getSuccessor(test).value);
+        System.out.println(test.value + " next: " + getSuccessor(test));
     }
 }

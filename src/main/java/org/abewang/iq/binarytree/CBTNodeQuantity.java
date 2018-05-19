@@ -1,7 +1,7 @@
 package org.abewang.iq.binarytree;
 
 /**
- * 完全二叉树的节点数
+ * 完全二叉树（Complete Binary Tree）的节点数
  *
  * @Author Abe
  * @Date 2018/5/13.
