@@ -11,19 +11,19 @@ public class PaperFolding {
      * 递归打印折痕方向
      *
      * @param isDown 方向是否是down
-     * @param i 当前对折数
      * @param N 对折数
      */
-    public static void printKinkMark(boolean isDown, int i, int N) {
-        if (i++ > N) {
+    public static void printKinkMark(boolean isDown, int N) {
+        if (N == 0) {
             return;
         }
-        printKinkMark(true, i, N);
+        N--;
+        printKinkMark(true, N);
         System.out.println(isDown ? "down" : "up");
-        printKinkMark(false, i, N);
+        printKinkMark(false, N);
     }
 
     public static void main(String[] args) {
-        printKinkMark(true, 1, 4);
+        printKinkMark(true, 4);
     }
 }
