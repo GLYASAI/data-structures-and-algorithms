@@ -19,6 +19,6 @@ public class HanoiTower {
 
     public static void main(String[] args) {
         int N = 3;
-        process(N, "left", "right", "mid");
+        process(N, "left", "right", "mid"); 
     }
 }
