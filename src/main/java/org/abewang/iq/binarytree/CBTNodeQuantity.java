@@ -20,7 +20,7 @@ public class CBTNodeQuantity {
     }
 
     public static Integer getMostLeftLevel(Node node, int level) {
-        while (node != null && node.left != null) {
+        while (node != null) {
             level++;
             node = node.left;
         }
