@@ -1,6 +1,7 @@
 package org.abewang.iq.rdp;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -35,7 +36,6 @@ public class FullPermutations {
     public static void permutations2(String str) {
         char[] charArr = str.toCharArray();
         Arrays.sort(charArr);
-        char[] temp = null;
         do {
             System.out.println(String.valueOf(charArr));
         } while (nextPerm(charArr) != null);
@@ -67,12 +67,13 @@ public class FullPermutations {
     }
 
     public static void reverse(char[] charArr, int j) {
-        char[] copy = new char[charArr.length];
-        for (int i = charArr.length - 1, k = 0; i > j; i--, k++) {
-            copy[k] = charArr[i];
-        }
-        for (int i = j + 1, k = 0; i < charArr.length; i++, k++) {
-            charArr[i] = copy[k];
+        int head = j + 1;
+        int tail = charArr.length - 1;
+        int length = (charArr.length - j) / 2;
+        for (int i = j; i < length; i++) {
+            swap(charArr, head, tail);
+            head++;
+            tail--;
         }
     }
 
