@@ -1,5 +1,7 @@
 package org.abewang.dsaa.binarytree;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 /**
@@ -121,6 +123,7 @@ public class BST<T> {
             if (cur.leftChild != null) {
                 stack.push(cur.leftChild);
             }
+            java.util.Queue<String> queue = new LinkedList<>();
         }
     }
 
