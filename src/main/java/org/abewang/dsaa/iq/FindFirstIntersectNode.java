@@ -79,7 +79,7 @@ public class FindFirstIntersectNode {
             return null;
         }
 
-        Node slowNode = head.next;  // TODO: 为什么不从head开始
+        Node slowNode = head.next;
         Node fastNode = head.next.next;
         while (slowNode != fastNode) {
             if (fastNode == null || fastNode.next == null) {
