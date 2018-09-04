@@ -7,7 +7,7 @@ package org.abewang.dsaa.simplesorting;
  */
 public class BubbleSort {
     public static void bubbleSort(int[] arr) {
-        for (int end = arr.length - 1; end > 1; end--) {
+        for (int end = arr.length -1 ; end > 0; end--) {
             for (int i = 0; i < end; i++) {
                 if (arr[i] > arr[i + 1]) {
                     swap(arr, i, i + 1);
