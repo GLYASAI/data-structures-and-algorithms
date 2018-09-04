@@ -29,7 +29,7 @@ public class MaxGap {
         }
 
         // 初始化桶
-        boolean[] hasNum = new boolean[len];  // 为什么是len + 1?
+        boolean[] hasNum = new boolean[len + 1];  // 为什么是len + 1? 如果是len + 1就肯定会有一个空桶, 不需要.
         int[] mins = new int[len];
         int[] maxs = new int[len];
         int bid = 0;

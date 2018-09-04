@@ -7,7 +7,7 @@ package org.abewang.dsaa.iq.foobar;
  * @Date 2018/9/4.
  */
 public class NumberOfOne {
-    static int getOneNum(int n) {
+    public static int getOneNum(int n) {
         int count = 0;
         while (n != 0) {
             n = n & (n - 1);  // 有多少个1, 就可以进行多少次这个操作.
@@ -18,6 +18,8 @@ public class NumberOfOne {
     }
 
     public static void main(String[] args) {
-        System.out.println(getOneNum(0));
+        String temp = Integer.toBinaryString(-1);
+        System.out.println(temp);
+        System.out.println(getOneNum(-1));
     }
 }
