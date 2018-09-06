@@ -4,8 +4,10 @@ package org.abewang.dsaa;
  * @Author Abe
  * @Date 2018/9/4.
  */
-public class Tmp {
+public interface Tmp {
     public static void main(String[] args) {
-        System.out.println(Byte.MIN_VALUE);
+        int[][] arr = {{1, 2, 3}, {1, 2, 3}};
+        System.out.println(arr.length);
+        System.out.println(arr[0].length);
     }
 }
