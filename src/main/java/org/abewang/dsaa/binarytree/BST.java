@@ -1,7 +1,6 @@
 package org.abewang.dsaa.binarytree;
 
 import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Stack;
 
 /**
@@ -142,6 +141,7 @@ public class BST<T> {
 
     /**
      * 后序遍历, 非递归
+     *
      * @param node
      */
     public void postOrderNonRec(Node node) {

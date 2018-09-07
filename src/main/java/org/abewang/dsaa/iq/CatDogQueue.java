@@ -9,7 +9,7 @@ import java.util.Queue;
  * @Author Abe
  * @Date 2018/5/2.
  */
-public class CatQueueQueue {
+public class CatDogQueue {
     private Queue<PetQueue> dogQ = new LinkedList<>();
     private Queue<PetQueue> catQ = new LinkedList<>();
     private static int count = 0;
@@ -110,7 +110,7 @@ public class CatQueueQueue {
     }
 
     public static void main(String[] args) {
-        CatQueueQueue test = new CatQueueQueue();
+        CatDogQueue test = new CatDogQueue();
 
         Pet dog1 = new Dog();
         Pet cat1 = new Cat();
