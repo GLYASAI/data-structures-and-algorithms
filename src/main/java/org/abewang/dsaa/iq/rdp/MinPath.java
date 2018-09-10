@@ -10,6 +10,10 @@ import java.util.Arrays;
  */
 public class MinPath {
     public static int getMinPath(int[][] mat, int r, int c) {
+        if (mat == null) {
+            return 0;
+        }
+
         if (r == mat.length - 1 && c == mat[0].length - 1) {
             return mat[r][c];
         }
@@ -42,12 +46,12 @@ public class MinPath {
     }
 
     public static void main(String[] args) {
-//        int[][] mat = {
-//                {0, 1, 4, 7},
-//                {5, 1, 2, 1},
-//                {3, 0, 8, 1}
-//        };
-        int[][] mat = {{0}};
+        int[][] mat = {
+                {0, 1, 4, 7},
+                {5, 1, 2, 1},
+                {3, 0, 8, 1}
+        };
+//        int[][] mat = null;
         System.out.println(getMinPath(mat, 0, 0));
         System.out.println(minPathSum(mat));
     }
