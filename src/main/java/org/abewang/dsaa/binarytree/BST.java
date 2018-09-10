@@ -122,7 +122,6 @@ public class BST<T> {
             if (cur.leftChild != null) {
                 stack.push(cur.leftChild);
             }
-            java.util.Queue<String> queue = new LinkedList<>();
         }
     }
 

@@ -22,8 +22,8 @@ public class RotateMatrix {
 
     public static void rotateEdge(int[][] arr, int tRow, int tCol, int dRow, int dCol) {
         while (tRow < dRow && tCol < dCol) {
-            int time = dCol - tCol;
-            for (int i = 0; i < time; i++) {
+            int times = dCol - tCol;
+            for (int i = 0; i < times; i++) {
                 int tmp = arr[tRow][tCol + i];
                 arr[tRow][tCol + i] = arr[tRow + i][dCol];
                 arr[tRow + i][dCol] = arr[dRow][dCol - i];
