@@ -1,4 +1,4 @@
-package org.abewang.dsaa.iq.bithacks;
+package org.abewang.dsaa.iq.bithacks.basic;
 
 /**
  * Add 1 to a given integer

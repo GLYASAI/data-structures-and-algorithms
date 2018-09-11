@@ -1,4 +1,4 @@
-package org.abewang.dsaa.iq.bithacks;
+package org.abewang.dsaa.iq.bithacks.basic;
 
 /**
  * detect if two integers have opposite signs or not.

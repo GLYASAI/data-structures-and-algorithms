@@ -1,4 +1,4 @@
-package org.abewang.dsaa.iq.bithacks;
+package org.abewang.dsaa.iq.bithacks.basic;
 
 /**
  * swap two integers without using any third variable.
