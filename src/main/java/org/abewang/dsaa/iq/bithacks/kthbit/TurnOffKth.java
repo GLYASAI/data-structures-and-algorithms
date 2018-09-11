@@ -1,7 +1,7 @@
 package org.abewang.dsaa.iq.bithacks.kthbit;
 
 /**
- * turn off k'th bit in a number
+ * Turn off k'th bit in a number
  *
  * @Author Abe
  * @Date 2018/9/11.
